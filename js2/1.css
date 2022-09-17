@@ -1,0 +1,79 @@
+.blocks{
+    margin-top: 20px;
+    padding: 30px, 40px;
+    height: 90%;
+    width: 100%;
+    border: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    border-radius: 20%;
+    flex-wrap: wrap;
+
+}
+.header{
+    background-color: blue;
+    height: 40px;
+    width: 100%;
+    font-kerning: initial;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    margin: auto;
+    height: 80%;
+    background-color: aqua;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.block1{
+    margin: 20px;
+    padding: 20px 40px;
+    border-width: 20%;
+    border-top: 10px;
+    border-color: black;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+
+}
+.button{
+    display: flex;
+}
+.input{
+    background-color: rgb(208, 0, 0);
+    height: 40px;
+}
+.popup{
+    width: 40%;
+    height: 40%;
+    background-color: azure;
+    position: absolute;
+    top: 35vh;
+    left: 35vw;
+}
+.popup{
+    background-color: rgb(75, 51, 161);
+}
+.popin{
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.newBtn{
+    width: 50px;
+    height: 30px;
+}
+.newBtnR{
+    width: 50px;
+    height: 30px;
+}
