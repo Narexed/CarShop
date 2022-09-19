@@ -108,42 +108,62 @@ let arr = [
 
 
 
-let xanut = [
-  {
-    id: 12,
-    price:600,
-    discount:10,
-    qty: 3
+// let xanut = [
+//   {
+//     id: 12,
+//     price:600,
+//     discount:10,
+//     qty: 3
 
-},
-{
-  id:16,
-  price:400,
-  discount:0,
-  qty: 2,
+// },
+// {
+//   id:16,
+//   price:400,
+//   discount:0,
+//   qty: 2,
 
-},
-{
-  id:19,
-  price:600,
-  discount: 0,
-  qty: 1,
+// },
+// {
+//   id:19,
+//   price:600,
+//   discount: 0,
+//   qty: 1,
 
-},
-]
+// },
+// ]
 
-let gin = xanut.reduce((prev, elem, index) =>{
-  prev +=(elem.price*elem.qty)*((100 - elem.discount)/100)
+// let gin = xanut.reduce((prev, elem, index) =>{
+//   prev +=(elem.price*elem.qty)*((100 - elem.discount)/100)
   
-  return prev
-},0)
-console.log(gin)
+//   return prev
+// },0)
+// console.log(gin)
 
 
 
 
   
-  
+// function filterBy(arr,userKey){
+// const newobj = {
+// }
+
+//  for(let i = 0; i<arr.length; i++){
+//   if(newobj[arr[i][userKey]] === undefined){
+//     newobj[arr[i][userKey]] = [ arr[i] ]
+
+//   }else{
+//     newobj[arr[i][userKey]].push(arr[i])
+
+//   }
+//  }
+
+
+// return newobj;
+// }
+// let c = filterBy(arr, "country")
+// console.log(c)
+
+
 
 
 
@@ -199,3 +219,6 @@ let outPut = {
 // }
 // let  c =  filterByCountry(arr)
 // console.log(c)
+
+
+
