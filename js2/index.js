@@ -163,22 +163,22 @@ let arr = [
 // let c = filterBy(arr, "country")
 // console.log(c)
 
-
-
+function filterBy(arr, userSay){
 const newArr = arr.reduce((prev, elem, index)=>{
-
-if(prev[elem.country] === undefined){
-  prev[elem.country] = elem.country
-  prev[elem.country] = [elem]
-  
-}else{
-
-  (prev[elem.country]).push(elem)
+if(prev[elem[userSay]] === undefined){
+  prev[elem[userSay]] = elem[userSay]
+  prev[elem[userSay]] = [elem]
+  }else{
+ prev[elem[userSay]].push(elem)
 }
 return prev;
 }, {})
+return newArr;
+}
 
-console.log(newArr)
+
+let newArr2 = filterBy(arr, "country")
+console.log(newArr2)
 
 
 
