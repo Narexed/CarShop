@@ -137,7 +137,7 @@ let arr = [
   
 //   return prev
 // },0)
-// console.log(gin)
+// // console.log(gin)
 
 
 
@@ -148,7 +148,7 @@ let arr = [
 // }
 
 //  for(let i = 0; i<arr.length; i++){
-//   if(newobj[arr[i][userKey]] === undefined){
+//   if(!newobj[arr[i][userKey]] ){
 //     newobj[arr[i][userKey]] = [ arr[i] ]
 
 //   }else{
@@ -163,6 +163,22 @@ let arr = [
 // let c = filterBy(arr, "country")
 // console.log(c)
 
+
+
+const newArr = arr.reduce((prev, elem, index)=>{
+
+if(prev[elem.country] === undefined){
+  prev[elem.country] = elem.country
+  prev[elem.country] = [elem]
+  
+}else{
+
+  (prev[elem.country]).push(elem)
+}
+return prev;
+}, {})
+
+console.log(newArr)
 
 
 
